@@ -75,7 +75,7 @@ const footers = [
   },
 ];
 
-const Home: NextPage<Props> = ({cursos}) => {
+const Home = ({cursos}: Props) => {
   return (
     <>
       <div>
