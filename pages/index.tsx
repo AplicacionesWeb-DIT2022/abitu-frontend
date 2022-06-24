@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import Head from 'next/head';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -77,6 +78,11 @@ const footers = [
 const Home: NextPage<Props> = ({cursos}) => {
   return (
     <>
+      <div>
+        <Head>
+          <title>Academia Online</title>
+        </Head>
+      </div>
       <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
       <CssBaseline />
       <AppBar
